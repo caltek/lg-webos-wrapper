@@ -1,5 +1,5 @@
 {
-  "name": "@xstream/webos-luna",
+  "name": "lg-webos-wrapper",
   "version": "1.0.0",
   "description": "TypeScript wrapper library for LG webOS TV Luna Services",
   "type": "module",
