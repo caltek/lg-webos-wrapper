@@ -17,11 +17,24 @@
       "require": "./dist/index.cjs"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caltek/lg-webos-wrapper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caltek/lg-webos-wrapper/issues"
+  },
+  "homepage": "https://github.com/caltek/lg-webos-wrapper#readme",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
     "build": "rm -rf dist && tsc -p tsconfig.build.json && vite build",
     "preview": "vite preview",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "webos",
@@ -38,7 +51,5 @@
     "typescript": "~5.9.3",
     "vite": "^7.1.7"
   },
-  "dependencies": {
-    "@vitejs/plugin-legacy": "^7.2.1"
-  }
+  "dependencies": {}
 }
