@@ -1,15 +1,44 @@
 {
-  "name": "lg_luna",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@xstream/webos-tv-wrapper",
+  "version": "1.0.0",
+  "description": "TypeScript wrapper library for LG webOS TV Luna Services",
   "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit"
   },
+  "keywords": [
+    "webos",
+    "lg",
+    "tv",
+    "luna",
+    "smart-tv",
+    "wrapper"
+  ],
+  "author": "",
+  "license": "MIT",
   "devDependencies": {
+    "@types/node": "^22.0.0",
     "typescript": "~5.9.3",
     "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "@vitejs/plugin-legacy": "^7.2.1"
   }
 }
