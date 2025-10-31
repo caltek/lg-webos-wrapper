@@ -1,6 +1,6 @@
 {
   "name": "lg-webos-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript wrapper library for LG webOS TV Luna Services",
   "type": "module",
   "main": "./dist/index.cjs",
