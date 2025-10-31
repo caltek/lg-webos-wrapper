@@ -25,7 +25,7 @@
     "url": "https://github.com/caltek/lg-webos-wrapper/issues"
   },
   "homepage": "https://github.com/caltek/lg-webos-wrapper#readme",
-  "sideEffects": false,
+  "sideEffects": true,
   "publishConfig": {
     "access": "public"
   },
